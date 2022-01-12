@@ -8,27 +8,38 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="container">
+    <main>
       <nav>
         <ul>
           <li><a href="high-scores">High Scores</a></li>
-          <li id="countdown"></li>
+          <li id="countdown">00:00</li>
         </ul>
       </nav>
-      <header>
-        <h1>Coding Quiz Challenge</h1>
-      </header>
-      <div class="card">
-        <p>
-          Try to answer the following code-related questions within the time
-          limit. Keep in mind that incorrect answers will penalise your
-          scoretime by ten seconds! Good luck!
-        </p>
-        <div class="card-footer">
-          <button id="startQuiz" class="btn">Start Quiz</button>
+      <div class="container">
+        <div class="main">
+          <h1>Coding Quiz Challenge</h1>
+          <div class="quiz_info">
+            <p class="quiz_info__description">
+              Try to answer the following code-related questions within the time
+              limit. Keep in mind that incorrect answers will penalise your
+              scoretime by ten seconds! Good luck!
+            </p>
+          </div>
+          <button class="quiz_info__btn">Start</button>
+          <div class="quiz">
+            <h3></h3>
+            <img
+              src="../practice/images/gaming-crown.png"
+              alt="Picture of crown"
+              class="quiz__img"
+            />
+            <h2></h2>
+            <div class="answers__container"></div>
+            <p class="quiz__results-description"></p>
+          </div>
         </div>
       </div>
-    </div>
+    </main>
     <script src="./assets/script.js"></script>
   </body>
 </html>
