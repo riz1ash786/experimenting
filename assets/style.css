@@ -1,105 +1,281 @@
-*,
-::before,
-::after {
-  box-sizing: border-box;
-}
-
-html,
-body,
-.container {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+.Exchanges-title h1 {
   text-align: center;
-}
-nav ul {
-  display: flex;
-  justify-content: space-between;
-}
-
-nav ul li {
-  list-style-type: none;
-  display: inline;
-}
-body {
-  font-family: sans-serif;
-  background-color: #f9fbfd;
-}
-.main {
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-top: 4rem;
+  font-size: 35px;
+  padding-bottom: 1rem;
+  color: #00004d;
+  font-weight: 600;
 }
 
-h1 {
-  font-size: 34px;
-}
-
-h2 {
-  font-size: 24px;
-}
-
-h3 {
-  font-size: 24px;
-  color: #9309af;
-  margin-top: 0.8rem;
-}
-.quiz_info {
-  background-color: hsl(0, 0%, 100%);
-  border-radius: 5px;
-  border-width: 1px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-  color: hsl(206, 17%, 28%);
-  font-size: 22px;
-  margin: 0 auto;
-  max-width: 800px;
-  padding: 30px 40px;
+.Exchanges-title p {
   text-align: center;
-}
-.quiz_info__description {
-  margin-bottom: 1rem;
-  font-weight: bold;
-}
-.quiz_info__btn {
-  border: none;
-  background-color: rgb(20, 150, 68);
-  border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
-    0px;
-  color: hsl(0, 0%, 100%);
-  display: inline-block;
-  font-size: 22px;
-  line-height: 22px;
-  margin: 16px 16px 16px 20px;
-  padding: 12px 20px;
-  text-align: center;
-  cursor: pointer;
-}
-.quiz_info__btn:hover {
-  color: #bd6925;
-  opacity: 85%;
-}
-
-.quiz {
-  display: none;
-}
-.answers__container {
-  display: inline-block;
-}
-.answers__container__answer {
-  padding: 1rem 8rem 1rem 1rem;
-  background-color: rgba(240, 248, 255, 0.7);
-  border: 1px solid rgb(0, 0, 0);
-  cursor: pointer;
   font-size: 18px;
+  color: #00004d;
+  font-weight: 470;
+  padding-bottom: 2rem;
 }
-.answers__container__answer:hover {
-  background-color: rgb(240, 248, 255);
+
+/* disables horizontal scroll */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
-.quiz__results-description {
-  font-size: 30px;
+
+nav {
+  background-color: #00004d;
+}
+
+.custom-logo-text {
+  margin-left: 30px;
+  font-variant: small-caps;
+}
+
+.custom-logo-img {
+  border-radius: 15px;
+}
+
+.custom-date {
+  margin-right: 60px;
+}
+
+.marquee {
+  /* width: 100vw; */
+  height: 3vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 2rem;
   width: 100%;
-  color: rgb(49, 62, 203);
+  /* height
+  overflow:hidden */
+}
+
+.marquee-content {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  animation: scrolling 20s linear infinite;
+  background-color: #00004d;
+}
+@keyframes scrolling {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(-100vw);
+  }
+}
+
+.marquee-content li {
+  border: 3px solid #00004d;
+  width: 15vw;
+  white-space: nowrap;
+  color: white;
+}
+
+.marquee-content:hover {
+  animation-play-state: paused;
+}
+
+.slider {
+  margin-top: 7%;
+}
+.caption {
+  padding-left: 50%;
+}
+
+.caption h3 {
+  font-variant: small-caps;
+}
+.custom-caption {
+  padding-left: 0;
+}
+.custom-search-div {
+  margin-top: 3%;
+}
+
+.custom-btn {
+  margin-top: 25%;
+  margin-left: 0;
+  text-align: center;
+}
+
+.btn {
+  border-radius: 10px;
+}
+
+img {
+  padding: 3%;
+}
+li {
+  list-style-type: none;
+  text-align: center;
+}
+.custom-search-history {
+  border-left-width: 0;
+  border-right-width: 0;
+}
+
+.custom-btn-history {
+  border-width: 0;
+  background-color: inherit;
+}
+
+.custom-btn-history:hover {
+  color: #9fa8da;
+}
+
+h5 {
+  color: #1a237e;
+}
+.custom-title {
+  font-size: 30px;
+  margin: 0px;
+  padding-top: 2%;
+  color: #1a237e;
+  text-align: center;
+  background-color: #fffde7;
+  padding: 0;
+}
+
+.custom-news-images {
+  height: 470px;
+}
+
+.custom-news-p {
+  color: #1a237e;
   font-weight: bold;
   text-align: center;
+}
+.custom-action {
+  min-height: 120px;
+}
+
+.custom-content {
+  min-height: 120px;
+}
+th {
+  text-align: center;
+}
+td {
+  text-align: center;
+}
+.custom-display-icon {
+  padding: 0;
+  padding-right: 5px;
+  width: 50px;
+  height: 40px;
+}
+.custom-chart-link {
+  text-align: center;
+  font-size: 15px;
+  padding-bottom: 2%;
+}
+.modal-close {
+  background-color: #aed581;
+}
+.modal-content h4 {
+  color: #ff8a65;
+}
+footer {
+  text-align: center;
+  font-style: italic;
+  font-weight: 5px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+/* top 15 page */
+.marquee-page {
+  height: 100px;
+  background-color: white;
+}
+/* top 15 page */
+.custom-page-button {
+  background-color: white;
+  color: blue;
+}
+.custom-page-button:hover {
+  background-color: #e0f7fa;
+}
+
+.dropdown-content li a {
+  color: black;
+}
+.dropdown-trigger i {
+  background-color: #00004d;
+  border-style: hidden;
+}
+
+@media screen and (max-width: 1300px) {
+  .custom-news-images {
+    height: 340px;
+  }
+  .marquee-content li {
+    width: 25vw;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .custom-btn {
+    margin-top: 0;
+    text-align: center;
+  }
+  table {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .custom-search-div {
+    margin-top: 13%;
+  }
+  .custom-btn {
+    margin-top: 0;
+    text-align: center;
+  }
+  .custom-title {
+    text-align: center;
+  }
+  .slider {
+    margin-top: 11%;
+  }
+  .caption {
+    padding-left: 0;
+  }
+  .caption h3 {
+    font-size: 20px;
+    padding: 10px;
+    background-color: #00004d;
+    text-align: center;
+    border-radius: 10px;
+  }
+  .caption h5 {
+    font-size: 15px;
+    background-color: #3d87b8;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  footer {
+    display: none;
+  }
+  .marquee {
+    display: none;
+  }
+  .custom-page-button {
+    font-size: 10px;
+  }
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place front is invalid - may break your css so removed */
+  left: 0;
+  right: 0; /* Full width (left and right 0) */
+  top: 0;
+  bottom: 0; /* Full height top and bottom 0 */
+  z-index: 9999; /* Sit on top - higher than any other z-index in your site*/
+  height: 200px;
 }
